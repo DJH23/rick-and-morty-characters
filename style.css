@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #74226c, #b24592, #c8324d, #74226c);
+  background-size: 400% 400%;
+  animation: backgroundMorph 15s ease infinite;
+  text-align: center;
+  height: 100vh;
+}
+
+@keyframes backgroundMorph {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rick-and-morty-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+}
+
+.rick-and-morty-header img {
+  width: 700px;
+  height: auto;
+}
+
+.character-list-h1 {
+  color: #00b2a9;
+  margin-top: 0;
+}
+
+#app {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  border: 3px solid #9be03a;
+  animation: borderAnimation 5s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #9be03a;
+  }
+  25% {
+    border-color: #00b2a9;
+  }
+  50% {
+    border-color: #8debcd;
+  }
+  75% {
+    border-color: #00b2a9;
+  }
+  100% {
+    border-color: #9be03a;
+  }
+}
+
+#character-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+.character {
+  background-color: #00b2a9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #9be03a;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.character img {
+  width: 100%;
+  max-width: fit-content;
+}
+
+.character h3 {
+  margin-top: 0;
+}
+
+.character p {
+  margin-bottom: 0;
+}
+
+/* Small devices (landscape phones, up to 576px) */
+@media (max-width: 576px) {
+  .rick-and-morty-header img {
+    width: 90vw;
+  }
+
+  input[type="text"] {
+    width: 231px;
+  }
+
+  #character-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* Medium devices (tablets, 577px up to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .rick-and-morty-header img {
+    width: 550px;
+  }
+
+  input[type="text"] {
+    width: 400px;
+  }
+}

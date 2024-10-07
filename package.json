@@ -1,0 +1,15 @@
+{
+  "name": "rick-and-morty-app",
+  "version": "1.0.0",
+  "description": "A web application that fetches and displays characters from the Rick and Morty API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
