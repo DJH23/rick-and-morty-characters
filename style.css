@@ -4,7 +4,7 @@ body {
   background-size: 400% 400%;
   animation: backgroundMorph 15s ease infinite;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @keyframes backgroundMorph {
